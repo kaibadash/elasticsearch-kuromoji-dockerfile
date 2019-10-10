@@ -4,6 +4,7 @@ versions=`curl -s https://www.docker.elastic.co/\# | grep "docker pull docker.el
 while read version
 do
   status=`curl https://github.com/kaibadash/elasticsearch-kuromoji-dockerfile/tree/$version -o /dev/null -w '%{http_code}\n' -s`
+  echo "$version"
   if [[ $status -eq 404 ]]; then
     git checkout -b $version
     sed s/VERSION/$version/ Dockerfile.template > Dockerfile
