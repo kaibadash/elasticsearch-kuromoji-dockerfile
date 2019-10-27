@@ -1,2 +1,2 @@
-https://cloud.docker.com/repository/docker/kaibadash/elasticsearch-kuromoji/tags
+https://hub.docker.com/r/kaibadash/elasticsearch-kuromoji
 
